@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMeter Load Test Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #2E8B57;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>JMeter Load Test Report</h1>
+
+    <div class="section">
+        <h2>Test Overview</h2>
+        <p>Goal: Evaluate the performance of the web application under load.</p>
+        <p>Scenario: Simulate 1000 concurrent users performing a series of actions.</p>
+        <p>Duration: 30 minutes</p>
+    </div>
+
+    <div class="section">
+        <h2>Results Summary</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Total Requests</td>
+                        <td>50,000</td>
+                    </tr>
+                    <tr>
+                        <td>Successful Requests</td>
+                        <td>49,800</td>
+                    </tr>
+                    <tr>
+                        <td>Failed Requests</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Average Response Time</td>
+                        <td>500 ms</td>
+                    </tr>
+                    <tr>
+                        <td>Maximum Response Time</td>
+                        <td>2000 ms</td>
+                    </tr>
+                    <tr>
+                        <td>Minimum Response Time</td>
+                        <td>100 ms</td>
+                    </tr>
+                    <tr>
+                        <td>90th Percentile</td>
+                        <td>700 ms</td>
+                    </tr>
+                    <tr>
+                        <td>95th Percentile</td>
+                        <td>900 ms</td>
+                    </tr>
+                    <tr>
+                        <td>99th Percentile</td>
+                        <td>1500 ms</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Graphs</h2>
+        <p><img src="link_to_response_time_graph.png" alt="Response Time Graph"></p>
+        <p><img src="link_to_throughput_graph.png" alt="Throughput Graph"></p>
+        <p><img src="link_to_error_graph.png" alt="Error Graph"></p>
+    </div>
+
+    <div class="section">
+        <h2>Conclusions and Recommendations</h2>
+        <p>The system handles 1000 concurrent users effectively, with an average response time of 500 ms. However, 0.4% of requests failed, indicating potential bottlenecks.</p>
+        <p>Recommendations:</p>
+        <ul>
+            <li>Optimize database performance.</li>
+            <li>Enhance server hardware.</li>
+            <li>Implement caching for frequently requested data.</li>
+        </ul>
+    </div>
+</body>
+</html>
